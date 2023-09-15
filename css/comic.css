@@ -1,0 +1,25 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url(../public/vecteezy_bright-colorful-comic-superhero-background_20354328.jpg);
+  font-family: Comic Sans MS;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.Comic_name {
+  color: blue;
+  padding: 20px;
+  font-weight: 600;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.Comic_container {
+  display: flex;
+  justify-content: center;
+}
+
+.Comic_container .card {
+  width: 18rem;
+}

@@ -1,0 +1,149 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Comic Sans MS;
+}
+
+/* Header */
+.header_container {
+  width: 100vw;
+  margin-top: 1px;
+}
+.header_container img {
+  display: block;
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.4rem;
+  object-position: center;
+}
+
+.img3 {
+  object-position: 0% 20% !important;
+}
+.img4 {
+  object-position: 0% 20% !important;
+}
+
+.Search_Box {
+  position: absolute;
+  top: 90%;
+  width: 80%;
+  left: 10%;
+}
+
+#Custom_carousel {
+  position: absolute;
+  opacity: 0.9;
+}
+
+/* Form  */
+
+#Character_input {
+  width: 40%;
+  height: 30px;
+  border-radius: 0.5rem;
+  background-color: #213555;
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: center;
+}
+
+form button {
+  height: 30px;
+  width: 80px;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+
+form button:hover {
+  background-color: red;
+  color: whitesmoke;
+  opacity: 1;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+#input_log {
+  position: absolute;
+  background-color: grey;
+  opacity: 0.8;
+  text-decoration: underline;
+  top: 50px;
+  left: 28%;
+  border-radius: 1rem;
+  color: aliceblue;
+  overflow: auto;
+}
+
+/* main */
+.main_container {
+  background-image: url(../public/ComicBG1.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_container h1 {
+  text-decoration: underline dotted;
+}
+/* Image container */
+
+.Character_container {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.Character_container img {
+  padding: 2px;
+  width: 100%;
+}
+
+.fav {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 25px;
+  color: yellow;
+}
+
+.card-text{
+  font-size: 1em;
+  word-break: break-all;
+  object-fit: cover;
+  object-position: center;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .fav {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    font-size: 18px;
+    color: yellow;
+  }
+  .Character_container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  
+
+  .card-text{
+    font-size: 0.8em;
+    word-break: break-all;
+    object-fit: cover;
+    object-position: center;
+  }
+}
