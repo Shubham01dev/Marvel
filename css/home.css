@@ -2,9 +2,21 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: Comic Sans MS;
+  animation: body 2s ease-in-out;
+
 }
 
-/* Header */
+@keyframes body {
+  from{
+    opacity:0.1 ;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+/***** Header ******/
+
 .header_container {
   width: 100vw;
   margin-top: 1px;
@@ -37,7 +49,8 @@ body {
   opacity: 0.9;
 }
 
-/* Form  */
+
+/****** Form  ******/
 
 #Character_input {
   width: 40%;
@@ -47,13 +60,36 @@ body {
   color: whitesmoke;
   font-size: 20px;
   text-align: center;
+  animation: 3s ease-in-out effect;
+}
+
+@keyframes effect{
+  from {
+    width: 0%;
+    height: 0px;
+  }
+  to {
+    width: 40%;
+    height: 30px;
+  }
+}
+
+#Character_input {
+  width: 40%;
+  height: 30px;
+  border-radius: 0.5rem;
+  background-color: #213555;
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: center;
+  transition: all 6s ease-in-out;
 }
 
 form button {
   height: 30px;
   width: 80px;
   opacity: 0.8;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 form button:hover {
@@ -76,7 +112,7 @@ form button:hover {
   overflow: auto;
 }
 
-/* main */
+/***** main *****/
 .main_container {
   background-image: url(../public/ComicBG1.webp);
   background-position: center;
@@ -89,10 +125,13 @@ form button:hover {
   align-items: center;
 }
 
-.main_container h1 {
+
+/*** Image container ***/
+
+.Heros{
   text-decoration: underline dotted;
 }
-/* Image container */
+
 
 .Character_container {
   margin: 0px;
@@ -111,11 +150,25 @@ form button:hover {
   position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: yellow;
+  animation: 2s ease-in-out favEffect;
 }
 
-.card-text{
+
+
+@keyframes favEffect {
+  from{
+    font-size: 0px;
+  }
+  to{
+    rotate: 360deg;
+    font-size: 26px;
+  }
+}
+
+
+.card-text {
   font-size: 1em;
   word-break: break-all;
   object-fit: cover;
@@ -138,9 +191,8 @@ form button:hover {
     justify-content: center;
     width: 90%;
   }
-  
 
-  .card-text{
+  .card-text {
     font-size: 0.8em;
     word-break: break-all;
     object-fit: cover;

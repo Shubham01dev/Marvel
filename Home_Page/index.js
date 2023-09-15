@@ -9,6 +9,8 @@ const UserInput = document.getElementById("Character_input");
 const input_log = document.getElementById("input_log");
 const canvas = document.getElementsByClassName("offcanvas-body");
 
+// Hasing Keys
+
 const ts = new Date().getTime().toString();
 const hash = CryptoJS.MD5(ts + PRIVATE_KEY + PUBLIC_KEY).toString();
 
@@ -48,6 +50,8 @@ UserInput.oninput = function (e) {
   }
 };
 
+//  ClearIng the inputField
+
 document.addEventListener("click",function(e){
   input_log.style.width = "0";
   input_log.style.height = "0";
@@ -75,6 +79,8 @@ form[0].onsubmit = function (e) {
 };
 
 fetchChar();
+
+// Adding Character to Favorite List;
 
 document.onclick = function(e){
   if(e.target.tagName == "I"){

@@ -1,16 +1,16 @@
 let Main_container = document.getElementsByClassName("main_container")
 
 function Home(result, Character_container) {
-  // appending the image on div element
 
   for (let i of result) {
     let img_path = i.thumbnail.path;
     let img_extention = i.thumbnail.extension;
     let img_name = i.name;
-    // seting border for containers
+   
+    // Creating Cards and appending to CardContainer 
 
     let Card = document.createElement("div");
-    Card.setAttribute("class", "card ");
+    Card.setAttribute("class", "card");
     Card.setAttribute("style", "width: 18rem");
 
     let img = document.createElement("img");

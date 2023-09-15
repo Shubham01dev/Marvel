@@ -20,6 +20,7 @@ const fetchData = async function (name) {
   let newArr = arr.slice(0, 6);
 
   // remove previous element on adding new elements
+
   let check = document.getElementsByClassName("check");
   if (check[0] == undefined) {
     Character_container = document.createElement("div");
@@ -29,6 +30,8 @@ const fetchData = async function (name) {
     Character_container = document.createElement("div");
     Character_container.setAttribute("class", "Character_container check");
   }
+
+  // Fetching Character by name 
 
   for (let i of newArr) {
     const data = await fetch(

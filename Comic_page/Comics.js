@@ -6,6 +6,8 @@ const hash = CryptoJS.MD5(ts + PRIVATE_KEY + PUBLIC_KEY).toString();
 
 let Chatacter_id;
 
+// Fetching Character Comic
+
 async function Comic(result) {
   for (let i of result) {
     Chatacter_id = i.id;
@@ -19,16 +21,17 @@ async function Comic(result) {
   let comic_Data = data.data.results;
 
   for (let i of comic_Data) {
+
+  // Appending Comics To ComicContainer
   
     if(i.images[0]){
+      
       let card = document.createElement('div');
       card.setAttribute('class', 'card p-0 ')
 
       let marvel = document.createElement('a');
       marvel.setAttribute('href',"https://www.marvel.com/comics?&options%5Boffset%5D=0&totalcount=12")
       marvel.setAttribute('target',"_blank")
-
-
 
       let img = document.createElement('img');
       img.setAttribute('class',"card-img-top")
