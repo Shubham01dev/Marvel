@@ -1,5 +1,5 @@
 import { PUBLIC_KEY, PRIVATE_KEY } from "../Keys/Keys.js";
-import fetchData from "./Fetch.js";
+import fetchChar from "./Fetch.js";
 
 let inputVal = document.getElementById("Character_input");
 
@@ -40,6 +40,7 @@ UserInput.oninput = function (e) {
     };
 
     fetchData(val);
+
   } else {
     input_log.style.width = "0";
     input_log.style.height = "0";
@@ -68,12 +69,12 @@ form[0].onsubmit = function (e) {
   e.preventDefault();
   let InputValue = UserInput.value;
   if (InputValue != "") {
-    fetchData(InputValue);
+    fetchChar(InputValue);
     inputVal.value = "";
   }
 };
 
-fetchData();
+fetchChar();
 
 document.onclick = function(e){
   if(e.target.tagName == "I"){

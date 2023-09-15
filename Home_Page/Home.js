@@ -19,10 +19,12 @@ function Home(result, Character_container) {
     
     let Card_body = document.createElement("div");
     Card_body.setAttribute("class", "card-body");
+    
     let h4 = document.createElement("h4");
     h4.innerHTML = img_name
     h4.setAttribute("class", "card-text")
     Card_body.append(h4)
+
     // favourite element
     let fav = document.createElement("i")
     fav.setAttribute("class", "fa-regular fa-star fav")
